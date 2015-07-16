@@ -102,9 +102,8 @@ body {
 	text-align: center;
 }
 
-/* 
-	***		Info Feautures Effect: Brackets 
-*/
+/* Info Feautures Effect: Brackets */
+
 .cl-effect-1 h4::before,
 .cl-effect-1 h4::after {
 	color: rgba(17, 185, 185, 1);
@@ -140,9 +139,9 @@ body {
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
 }
-/*
-	***		ICONS EFECTS SECTION: FEATURES
-*/
+
+/* ICONS EFECTS SECTION: FEATURES */
+
 .hi-icon:after {
 	pointer-events: none;
 	position: absolute;
@@ -204,6 +203,7 @@ body {
 		opacity: 0;
 	}
 }
+
 @-moz-keyframes sonarEffect {
 	0% {
 		opacity: 0.3;
@@ -218,6 +218,7 @@ body {
 		opacity: 0;
 	}
 }
+
 @keyframes sonarEffect {
 	0% {
 		opacity: 0.3;
