@@ -1,3 +1,11 @@
+//SCROLL ABOUT
+var about = document.getElementById("about");
+about.addEventListener("mouseover", myFunction);
+
+function myFunction() {
+    var aboutlist = document.getElementById('about-list');
+    aboutlist.style.display = "block";
+}
 //
 function togglescroll() {
   $('body').on('touchstart', function(e) {
