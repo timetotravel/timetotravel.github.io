@@ -78,7 +78,7 @@ ul li{
 }
 
 .logo{
-  background-color: #11B9C3;
+  background-image: url(../img/TimeToTravel_logo.png);
   display: inline-block;
   margin-top: 2%;
   height: 100px;
