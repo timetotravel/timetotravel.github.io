@@ -269,6 +269,7 @@ li a:hover{
   padding: 0px 344px;
   margin: 38px 0;
   font-size: 18px;
+  text-align: left;
 }
 .about-container-list{
   animation-duration: 3s;
