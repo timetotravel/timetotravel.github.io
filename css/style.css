@@ -10,7 +10,6 @@
     font-style: normal;
 
 }
-
 @font-face {
     font-family: 'slim_joeregular';
     src: url('../fonts/slim_joe-webfont.eot');
@@ -21,5 +20,100 @@
          url('../fonts/slim_joe-webfont.svg#slim_joeregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+.about{
+  background: url(../img/about.png) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 411px;
+  transform:skew(0deg,-4deg);
+  -ms-transform:skew(0deg,-4deg);
+  -webkit-transform:skew(0deg,-4deg);   
+}
+.about-container{
+  text-align: center;
+  transform:skew(0deg,4deg);
+  -ms-transform:skew(0deg,4deg);
+  -webkit-transform:skew(0deg,4deg);
+  top: 53px;
+  position: relative; 
+}
+.about-container-title{
+  font-family: 'big_johnregular';
+  color: #11B9C3;
+  font-size:35px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about-container-title-span{
+  font-family: 'slim_joeregular';
+  font-size:46px;
+  top: 5px;
+  position: relative;
+  text-transform: uppercase;
+}
+.about-container-text{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 0px 344px; 
+  margin-bottom: 38px;
+}
+.about-container-list{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+.about-container-list-economic{
+  display: inline-block;
+  margin-left: 23px;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+.about-container-list-economic-circle{
+  margin-right: 77px;
+}
 
+.about-container-list-economic-images{
+  width: 58px;
+  margin-right: 77px;
+  margin-left: -159px;
+  top: -16px;
+  position: relative;
+}
+.runner{
+  width: 71px;
+  top: -22px;
+  left: -9px;
+}
+.smartphone{
+  width: 44px;
+  left: 6px;
 }
