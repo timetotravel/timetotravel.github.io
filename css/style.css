@@ -57,7 +57,7 @@ a{
 text-decoration: none;
 }
 
-ul{
+.nav-principal ul{
   list-style: none;
   display: inline-block;
   margin-left: 32%;
@@ -67,7 +67,7 @@ ul li{
   display: inline-block;
 }
 
-ul a{
+.nav-principal ul a{
   color: #11B9C3;
   font-size: 16px;
   font-size: 1.6rem;
@@ -75,7 +75,7 @@ ul a{
 
 }
 
-ul a:hover{
+.nav-principal ul a:hover{
   border-bottom: 4px solid #11B9C3;
 }
 
@@ -110,34 +110,15 @@ ul a:hover{
   cursor: pointer;
 }
 
-.btn-play{
-  background-color:#11B9C3;
-  margin-right: 13%;
-}
-
-.btn-play a, .btn-apple a{
-  color: #fff;
-  font-family: helvetica;
-  font-size: 16px;
-  font-size: 1.6rem;
-  text-align: center;
-  margin: 5px;
-} 
-
-.btn-play span, .btn-apple span{
-  font-weight: bold;
-  text-align: center;
-  margin: 5px;
-}
-
-.btn-apple{
-  background-color:#009393;
-  margin-right: 5%;
+.app-list-nav {
+  margin: 40px 0;
+  float: right;
+  padding: 0;
 }
 
 .img-home{
   position: absolute;
-  margin-top: 13%;
+  margin-top: 13.3%;
 }
 
 @media (max-width: 1280px) {
@@ -457,6 +438,73 @@ li a:hover{
 }
 
 /*-------------------------------------------------Fin Features--------------------------------------------*/
+/*-------------------------------------------------Get App------------------------------------------------*/
+
+/*Section Get app Styles*/
+.get-app{
+    background: url(../img/Background-Divices.png)no-repeat center center;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 150px;
+    transform:skew(0deg,-4deg);
+    -ms-transform:skew(0deg,-4deg);
+    -webkit-transform:skew(0deg,-4deg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+
+}
+
+.get-app-container{
+    transform:skew(0deg,4deg);
+    -ms-transform:skew(0deg,4deg);
+    -webkit-transform:skew(0deg,4deg); 
+}
+
+.get-app-title{
+    color: #11B9C3;
+    font-family: 'big_johnregular';
+    font-size: 52px;
+    padding-top: 50px; 
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.get-app p{
+    font-family: Helvetica;
+    font-size: 24px;
+    margin: 0 auto 60px;
+    text-align: center;
+    width: 500px;  
+}
+
+.ios-store{
+    background-image: url(../img/IOS.png);
+    width: 250px;
+    height: 90px;
+    text-indent: -9999px;
+    margin-right: 50px;
+}
+
+.play-store{
+    background-image: url(../img/PLAY.png);
+    width: 250px;
+    height: 90px;
+    text-indent: -9999px;
+    margin-left: 50px;
+}
+
+.app-list li{
+    display: inline-block;
+}
+
+.app-list{
+    text-align: center;
+}
+
+/*-------------------------------------------------Fin Get App-----------------------------------------*/
 /*-------------------------------------------------Contact---------------------------------------------*/
 
 .contact{
@@ -552,4 +600,73 @@ form{
 
 :-ms-input-placeholder {  
   color: #11B9C3;
+}
+
 /*-------------------------------------------------Fin Contact---------------------------------------------*/
+/*----------------------------------------------------Footer-----------------------------------------------*/
+
+footer{
+    background: url(../img/footer-background.png);
+    width: 100%;
+    height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+.footer-container{
+    padding-top: 100px;
+}
+
+.logo-footer{
+    display: block;
+    text-align: center;
+}
+
+.footer-icons{
+    text-align: center;
+    padding: 0;
+}
+
+.footer-icons li{
+    display: inline-block;
+    list-style: none;
+}
+
+footer p{
+  font-size: 16px;
+      text-align: center;
+      margin: 0;
+      color: #fff;
+      font-family: Helvetica;
+}
+
+.behance{
+    background: url("../img/icons.png") 0px 0 no-repeat;
+    margin-right: 25px;
+}
+
+.linkedin{
+    background: url("../img/icons.png") -70px 0 no-repeat;
+    margin: 0 25px;
+}
+
+.twitter{
+    background: url("../img/icons.png") -140px 0 no-repeat;
+    margin-left: 25px;
+}
+
+.footer-icons li a{
+     text-indent: -9999px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+/*----------------------------------------------------Fin Footer-----------------------------------------------*/
