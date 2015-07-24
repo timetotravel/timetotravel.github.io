@@ -172,23 +172,23 @@ ul li{
 /*-------------------------------------------------About------------------------------------------------*/
 
 .about {
-  background: url(../img/about.png) no-repeat center;
+  background: url(../img/about.png) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 506px;
-  margin-top: -52px;
-  transform:skew(0deg,-4deg);
-  -ms-transform:skew(0deg,-4deg);
-  -webkit-transform:skew(0deg,-4deg);   
+  height: 539px;
+  margin-top: -103px;
+  transform:skew0deg,0deg);
+  -ms-transform:skew(0deg,0deg);
+  -webkit-transform:skew(0deg,0deg);   
 }
 .about-container {
   padding-top: 95px;
   text-align: center;
-  transform:skew(0deg,4deg);
-  -ms-transform:skew(0deg,4deg);
-  -webkit-transform:skew(0deg,4deg); 
+  transform:skew(0deg,0deg);
+  -ms-transform:skew(0deg,0deg);
+  -webkit-transform:skew(0deg,0deg); 
 }
 
 .about-container span {
