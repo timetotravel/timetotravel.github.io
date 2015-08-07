@@ -57,14 +57,12 @@ $(document).ready(function (){
   function changeFeatures(){
     var pos = "";
     var img = $(".phoneFeatures");
-    $(".img-feature").mouseenter(function(){
+    $(".img-feature").hover(function(){
       pos = $(this).attr("id");
       var contentImg = '<img class="feature-phone" src="img/feature-img/'+pos+'.png">';
       img.html(contentImg);      
       });
     
-    $(".feature").mouseleave(function(){
-      img.html('<img class="feature-phone" src="img/feature-img/cover.png">');
     }); 
     
   }changeFeatures();
