@@ -298,6 +298,10 @@ ul li{
   width: 60px;
 }
 
+.feature-phone {
+  height: 600px;
+}
+
 .icon-fill {
   fill: #fff;
 }

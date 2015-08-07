@@ -7,32 +7,66 @@ function myFunction() {
     aboutlist.style.display = "block";
 }
 //
-function togglescroll() {
-  $('body').on('touchstart', function(e) {
-    if ($('body').hasClass('noscroll')) {
-      e.preventDefault();
+$(document).ready(function (){
+
+    /*
+    **SCROLL HANDLER
+  */
+  $('a[href^="#"]').on('click',function (e) {
+    e.preventDefault();
+
+    var target = this.hash,
+    $target = $(target);
+
+    $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+    }, 1200, 'swing', function () {
+        window.location.hash = target;
+    });
+  });
+
+  function togglescroll() {
+    $('body').on('touchstart', function(e) {
+      if ($('body').hasClass('noscroll')) {
+        e.preventDefault();
+      }
+    });
+  }togglescroll();
+    
+      $(".icon").click(function() {
+        $(".mobilenav").fadeToggle(500);
+        $(".top-menu").toggleClass("top-animate");
+        $("body").toggleClass("noscroll");
+        $(".mid-menu").toggleClass("mid-animate");
+        $(".bottom-menu").toggleClass("bottom-animate");
+      });
+
+  $(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+      $(".mobilenav").fadeOut(500);
+      $(".top-menu").removeClass("top-animate");
+      $("body").removeClass("noscroll");
+      $(".mid-menu").removeClass("mid-animate");
+      $(".bottom-menu").removeClass("bottom-animate");
     }
   });
-}
-//
-$(document).ready(function() {
-  togglescroll()
-  $(".icon").click(function() {
-    $(".mobilenav").fadeToggle(500);
-    $(".top-menu").toggleClass("top-animate");
-    $("body").toggleClass("noscroll");
-    $(".mid-menu").toggleClass("mid-animate");
-    $(".bottom-menu").toggleClass("bottom-animate");
-  });
-});
 
-//
-$(document).keydown(function(e) {
-  if (e.keyCode == 27) {
-    $(".mobilenav").fadeOut(500);
-    $(".top-menu").removeClass("top-animate");
-    $("body").removeClass("noscroll");
-    $(".mid-menu").removeClass("mid-animate");
-    $(".bottom-menu").removeClass("bottom-animate");
-  }
+  /* **Features Images
+    This changes the images depence the feature with hover
+  */
+  function changeFeatures(){
+    var pos = "";
+    var img = $(".phoneFeatures");
+    $(".img-feature").mouseenter(function(){
+      pos = $(this).attr("id");
+      var contentImg = '<img class="feature-phone" src="img/feature-img/'+pos+'.png">';
+      img.html(contentImg);      
+      });
+    
+    $(".feature").mouseleave(function(){
+      img.html('<img class="feature-phone" src="img/feature-img/cover.png">');
+    }); 
+    
+  }changeFeatures();
+
 });
