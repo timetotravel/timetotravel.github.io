@@ -61,10 +61,7 @@ $(document).ready(function (){
       pos = $(this).attr("id");
       var contentImg = '<img class="feature-phone" src="img/feature-img/'+pos+'.png">';
       img.html(contentImg);      
-      });
-    
-    }); 
-    
+    });    
   }changeFeatures();
 
 });
