@@ -1,0 +1,188 @@
+.max-container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.title-section {
+  color: #11B9C3;
+  font-family: "big_johnregular";
+  margin:85px 0 40px 0;
+  text-align: center;
+  font-size: 36px;
+}
+
+/*-------------------------------------------------Home---------------------------------------------*/
+header {
+  background: url(../img/home.jpg)no-repeat;
+  background-size: cover;
+}
+
+header .app-list-header li {
+  width: 49%;
+}
+
+ul li{
+  display: inline-block;
+}
+
+.app-list-header {
+  float: left;
+  margin-top: 100px;
+}
+
+.app-list-header p {
+  padding-top: 0; 
+}
+
+.img-home {
+  margin-left: -24%;
+  padding-top: 250px;
+}
+
+.logo-header {
+  height: 100px;
+}
+
+.main-nav ul a {
+  color: #11B9C3;
+  font-family: "big_johnregular";
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin: 0 10px;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+  transition: ease-out 0.5s;
+}
+
+.main-nav ul a:hover {
+  border-bottom: 2px solid #11B9C3;
+  box-sizing:border-box;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.sub-title {
+  color: #fff;
+  float: right;
+  font-family: "Helvetica";
+  font-size: 4.8rem;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 250px 0 0 5%;
+}
+
+.btn {
+  background: rgba(17, 185, 195, 0.75);
+  border: 1px solid #fff;
+  border-radius: 25px;
+  box-shadow: 0.6px 0.6px # ;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 25px;
+  padding: 10px 12px;
+  position: relative;
+  -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+}
+
+.btn:hover {
+  background: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.btn:hover .info-get {
+  color: #11B9C3;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.info-get {
+  color: #fff;
+  height: 0;
+  font-family: "Helvetica";
+  font-size: 18px !important;
+  padding-top: 13px !important; 
+}
+
+.ios-store i, .play-store i { 
+  color: #fff;
+  font-size: 4.5em;
+}
+
+.btn:hover i{ 
+  color: #11B9C3;
+}
+
+@media (max-width: 640px){
+  .img-home{ 
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  header .ios-store i, header .play-store i {
+    font-size: 3.5em !important;
+  }
+  header .info-get {
+    font-size: 16px !important;
+  }
+  .sub-title{
+    padding: 200px 0 0 0;
+    width: 92%;
+  }
+}
+@media(max-width: 768px){
+  header{
+    height: 500px;
+  }
+  header .app-list-header {
+    margin-top: 50px;
+    padding-left: 0;
+  }
+  header .app-list-header .btn{
+    font-size: 14px !important;
+    margin-right: 0;
+    padding: 8px 12px;
+  }
+  header .app-list-header .ios-store i, header .app-list-header .play-store i {
+    font-size: 3.5em;
+  }
+  .img-home {
+    padding-top: 180px;
+  }
+  header .info-get {
+    padding-top: 6px !important;
+  }
+  .logo-header {
+    height: 75px;
+  }
+  .sub-title { 
+    font-size: 36px;
+    padding: 150px 10% 0 0;
+  }
+}
+/*-------------------------------------------------Fin Home--------------------------------------------*/
+
+/*-------------------------------------------------About--------------------------------------------*/
+.section-heading span {
+  font-family: 'slim_joeregular';
+  font-size:46px;
+  top: 5px;
+  position: relative;  
+}
+.section-heading p {
+  font-family: "Helvetica";
+  font-size: 22px;
+  text-align: auto;
+  margin: 0 auto 38px;
+  width: 65%;
+}
+/*-------------------------------------------------END ABOUT---------------------------------------------*/
+
+
+
