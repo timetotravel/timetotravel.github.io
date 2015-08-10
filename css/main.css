@@ -939,7 +939,7 @@ form .form-control:focus {
     background: #ffffff;
   }
   header .navbar-default.scrolled {
-    background: rgba(17,185,195,0.7);
+    background: rgba(17,185,195,0.4);
   }
   header .navbar-default.scrolled ul.navbar-nav li a {
     color: rgba(17,185,195,.9);
@@ -973,6 +973,26 @@ form .form-control:focus {
   .heading.inverse p{
     margin-bottom: -25px;
   }
+}
+
+@media (max-width: 640px){
+  #features .img-feature {
+    height: 60px !important;
+    width: 60px !important;
+  }
+  #features .info-feature {
+    font-size: 12px !important;
+  }
+  .section-heading p {
+    width: 100% !important;
+  }
+  #about .about-item i.fa {
+    font-size: 32px;
+    height: 80px;
+    padding: 24px;
+    width: 80px;
+  }
+
 }
 
 .pre-loader {

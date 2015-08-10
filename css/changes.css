@@ -119,23 +119,6 @@ ul li{
   color: #11B9C3;
 }
 
-@media (max-width: 640px){
-  .img-home{ 
-    display: none;
-  }
-}
-@media (min-width: 769px) and (max-width: 1200px) {
-  header .ios-store i, header .play-store i {
-    font-size: 3.5em !important;
-  }
-  header .info-get {
-    font-size: 16px !important;
-  }
-  .sub-title{
-    padding: 200px 0 0 0;
-    width: 92%;
-  }
-}
 @media(max-width: 768px){
   header{
     height: 500px;
@@ -144,14 +127,7 @@ ul li{
     margin-top: 50px;
     padding-left: 0;
   }
-  header .app-list-header .btn{
-    font-size: 14px !important;
-    margin-right: 0;
-    padding: 8px 12px;
-  }
-  header .app-list-header .ios-store i, header .app-list-header .play-store i {
-    font-size: 3.5em;
-  }
+ 
   .img-home {
     padding-top: 180px;
   }
@@ -166,6 +142,48 @@ ul li{
     padding: 150px 10% 0 0;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  header .ios-store i, header .play-store i {
+    font-size: 3.5em !important;
+  }
+  header .info-get {
+    font-size: 16px !important;
+  }
+  .sub-title{
+    padding: 200px 0 0 0;
+    width: 92%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+   header .app-list-header .btn{
+    font-size: 14px !important;
+    margin-right: 0;
+    padding: 8px 12px;
+  }
+  header .app-list-header .ios-store i, header .app-list-header .play-store i {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 640px){
+  header .app-list-header {
+    padding-left: 22.5px !important;
+  }
+  header .app-list-header .btn {
+    font-size: 13px;
+  }
+  .img-home{ 
+    display: none;
+  }
+  .sub-title {
+      font-size: 42px;
+      text-align: center;
+      padding-right: 0;  
+  }
+}
+
 /*-------------------------------------------------Fin Home--------------------------------------------*/
 
 /*-------------------------------------------------About--------------------------------------------*/
