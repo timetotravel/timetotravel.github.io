@@ -221,6 +221,14 @@ header .navbar-default.scrolled ul.navbar-nav {
 /*-------------------------------------------------END ABOUT---------------------------------------------*/
 
 /*-------------------------------------------------FEATURES SECTION---------------------------------------------*/
+.feature-phone {
+  width: 360px;
+  height: 770px;
+  padding-top: 108px;
+  padding-left: 29px;
+  background: url(../img/feature-img/phone.png) center center no-repeat;
+}
+
 #features .media > .pull-right {
   margin-left: 20px;
 }
@@ -254,9 +262,6 @@ header .navbar-default.scrolled ul.navbar-nav {
 }
 #features .media.feature:first-child {
   margin-top: 0;
-}
-#features img {
-  margin: 0 auto 20px;
 }
 .feature {
   text-align: center;
